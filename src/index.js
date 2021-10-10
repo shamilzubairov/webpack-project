@@ -1,5 +1,5 @@
-import 'normalize.css'
-import './styles/index.scss'
+import "normalize.css";
+import "./styles/index.scss";
 
-const main = () => console.log('This is an INITINAL JS-CODE!!!')
-main()
+const main = () => console.log("This is an INITINAL JS-CODE!!!");
+main();

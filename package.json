@@ -4,7 +4,8 @@
     "start": "webpack serve",
     "watch": "webpack --watch",
     "dev": "webpack",
-    "build": "NODE_ENV=production webpack"
+    "build": "NODE_ENV=production webpack",
+    "format": "prettier --write \"src/**/*.js\""
   },
   "devDependencies": {
     "@babel/core": "^7.15.8",
@@ -16,6 +17,7 @@
     "postcss": "^8.3.9",
     "postcss-loader": "^6.1.1",
     "postcss-preset-env": "^6.7.0",
+    "prettier": "^2.4.1",
     "sass": "^1.42.1",
     "sass-loader": "^12.1.0",
     "style-loader": "^3.3.0",
