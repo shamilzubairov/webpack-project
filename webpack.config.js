@@ -12,8 +12,15 @@ module.exports = {
   resolve: {
     extensions: [".js", ".jsx"],
   },
+  output: {
+    assetModuleFilename: "assets/[hash][ext]",
+  },
   module: {
     rules: [
+      {
+        test: /\.(png|jpe?g|gif|svg)$/i,
+        type: "asset",
+      },
       {
         test: /\.jsx?$/i,
         exclude: /node_modules/,
