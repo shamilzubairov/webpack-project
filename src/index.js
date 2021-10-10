@@ -1,1 +1,2 @@
-console.log('INITINAL CODE')
+const main = () => console.log('INITINAL CODE!!!')
+main()
