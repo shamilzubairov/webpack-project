@@ -9,6 +9,9 @@ module.exports = {
   mode,
   target,
   devtool: "source-map",
+  resolve: {
+    extensions: [".js", ".jsx"],
+  },
   module: {
     rules: [
       {
@@ -36,6 +39,6 @@ module.exports = {
         directory: path.join(__dirname, "dist"),
       },
     ],
-    hot: true,
+    hot: process.env.NODE_ENV === "production" ? false : true,
   },
 };

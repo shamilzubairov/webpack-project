@@ -1,5 +1,8 @@
 import "normalize.css";
 import "./styles/index.scss";
 
-const main = () => console.log("This is an INITINAL JS-CODE!!!");
-main();
+import ReactDOM from "react-dom";
+
+import App from "./components/App";
+
+ReactDOM.render(<App />, document.getElementById("root"));
